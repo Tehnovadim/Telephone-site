@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interstellar Movie</title>
+    <style>
+        body {
+            background: #1a7a7c 
+        }
+
+        header,
+        footer,
+        main,
+        nav,
+        aside {
+            padding: 20px;
+        }
+
+        header,
+        footer {
+            background-color: #37474f;
+            color: white;
+            font-size: 24px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .blue-panel {
+            background-color: blue;
+            color: white;
+            padding: 20px;
+            margin: 20px 0;
+            text-align: center;
+            border-radius: 12px;
+        }
+
+        .square-panel {
+            display: none;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        .square {
+            width: 50%; 
+            height: 310px; 
+            background-color: #ccc;
+            margin: 5px;
+            border-radius: 12px; 
+            text-align: center; 
+            color: white; 
+        }
+
+        .square:nth-child(odd) {
+            background-color: blue;
+        }
+
+        .square:nth-child(even) {
+            background-color: gray;
+        }
+
+        @media screen and (max-width: 600px) {
+            .container {
+                flex-direction: column-reverse;
+            }
+
+            .blue-panel {
+                display: none;
+            }
+
+            .square-panel {
+                display: flex;
+            }
+
+            .square {
+                width: 100%; 
+                height: auto; 
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    </div>
+    <div class="blue-panel">
+        <h2>Улюблений фільм</h2>
+        <p>Мій улюблений фільм - це "Інтерстеллар". Це захоплююча науково-фантастична драма про космічні подорожі, любов і виживання людства. Фільм розповідає про групу вчених, які використовують червоточину поряд зі Сатурном для подорожі за межі нашої галактики в пошуках нового дому для людства. Інтерстеллар відомий своїми реалістичними зображеннями чорних дір і викривленням часу, а також емоційною сюжетною лінією про відносини між батьками і дітьми.</p>
+    </div>
+    <div class="square-panel">
+        <div class="square">
+            <h3>Інтерстеллар за межі галактики</h3>
+            <p>“Интерстеллар” демонстрирует путешествие через червоточину в другую галактику.</p>
+        </div>
+        <div class="square">
+            <h3>Любов і виживання</h3>
+            <p>“Интерстеллар” исследует любовь и выживание в экстремальных условиях.</p>
+        </div>
+        <div class="square">
+            <h3>Чорні діри і час</h3>
+            <p>“Интерстеллар” известен реалистичными изображениями черных дыр и искривления времени.</p>
+        </div>
+    </div>
+</body>
+</html>

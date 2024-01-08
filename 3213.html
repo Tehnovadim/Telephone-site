@@ -3,25 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PhoneSite</title>
+    <title>Улюблений фільм</title>
     <style>
         body {
-            background: #1a7a7c 
+            background: #1a7a7c;
+            padding-top: 230px; 
         }
 
-        header,
-        footer,
-        main,
-        nav,
-        aside {
-            padding: 20px;
+        header, nav {
+            padding: 0;
+            margin: 0;
         }
 
-        header,
-        footer {
+        header {
             background-color: #37474f;
             color: white;
-            font-size: 24px;
+            font-size: 15px;
+            position: fixed; 
+            top: 0; 
+            width: 100%; 
+            z-index: 1; 
+            border-radius: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            margin-left: -20%; 
+        }
+
+        nav ul li {
+            margin-left: 10px;
+        }
+
+        nav ul li a {
+        color: white; 
+        text-decoration: none; 
+        }
+
+       nav ul li a:hover {
+       color: #00f5ff;
+       text-decoration: none; 
         }
 
         .container {
@@ -80,28 +107,55 @@
                 height: auto; 
             }
         }
+
+        footer {
+            background-color: #37474f;
+            color: white;
+            font-size: 22px;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+            height: 65px;
+            border-radius: 12px;
+        }
     </style>
 </head>
 <body>
+  <header>
+    <h1>Ласкаво просимо на сайт Вадима Головіна</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
     <div class="container">
+      
     </div>
-    <div class="blue-panel">
-        <h2>Улюблений фільм</h2>
-        <p>Мій улюблений фільм - це "Інтерстеллар". Це захоплююча науково-фантастична драма про космічні подорожі, любов і виживання людства. Фільм розповідає про групу вчених, які використовують червоточину поряд зі Сатурном для подорожі за межі нашої галактики в пошуках нового дому для людства. Інтерстеллар відомий своїми реалістичними зображеннями чорних дір і викривленням часу, а також емоційною сюжетною лінією про відносини між батьками і дітьми.</p>
-    </div>
-    <div class="square-panel">
-        <div class="square">
-            <h3>Інтерстеллар за межі галактики</h3>
-            <p>“Интерстеллар” демонстрирует путешествие через червоточину в другую галактику.</p>
-        </div>
-        <div class="square">
-            <h3>Любов і виживання</h3>
-            <p>“Интерстеллар” исследует любовь и выживание в экстремальных условиях.</p>
-        </div>
-        <div class="square">
-            <h3>Чорні діри і час</h3>
-            <p>“Интерстеллар” известен реалистичными изображениями черных дыр и искривления времени.</p>
-        </div>
-    </div>
+  </main>
+    <article class="blue-panel">
+      <h2>Улюблений фільм</h2>
+      <p>Мій улюблений фільм - це "Інтерстеллар". Це захоплююча науково-фантастична драма про космічні подорожі, любов і виживання людства. Фільм розповідає про групу вчених, які використовують червоточину поряд зі Сатурном для подорожі за межі нашої галактики в пошуках нового дому для людства. Інтерстеллар відомий своїми реалістичними зображеннями чорних дір і викривленням часу, а також емоційною сюжетною лінією про відносини між батьками і дітьми.</p>
+    </article>
+    <section class="square-panel">
+      <div class="square">
+        <h3>Інтерстеллар за межі галактики</h3>
+        <p>“Интерстеллар” демонстрирует путешествие через червоточину в другую галактику.</p>
+      </div>
+      <div class="square">
+        <h3>Любов і виживання</h3>
+        <p>“Интерстеллар” исследует любовь и выживание в экстремальных условиях.</p>
+      </div>
+      <div class="square">
+        <h3>Чорні діри і час</h3>
+        <p>“Интерстеллар” известен реалистичными изображениями черных дыр и искривления времени.</p>
+      </div>
+    </section>
+  <footer>
+    <p>First site in 2024 year</p>
+  </footer>
 </body>
 </html>

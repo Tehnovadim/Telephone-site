@@ -42,18 +42,22 @@
         }
 
         nav ul li a {
-        color: white; 
-        text-decoration: none; 
+            color: white; 
+            text-decoration: none; 
         }
 
-       nav ul li a:hover {
-       color: #00f5ff;
-       text-decoration: none; 
+        nav ul li a:hover {
+            color: #00f5ff;
+            text-decoration: none; 
         }
 
         .container {
             display: flex;
             flex-direction: row;
+        }
+
+        .blue-panel {
+            display: none;
         }
 
         .blue-panel {
@@ -66,28 +70,31 @@
         }
 
         .square-panel {
-            display: none;
-            flex-direction: row;
+            display: flex;
+            flex-direction: row;  
             justify-content: space-around;
+            flex-wrap: wrap; 
         }
 
         .square {
-            width: 50%; 
-            height: 310px; 
+            width: 30%; 
+            height: 360px; 
             background-color: #ccc;
             margin: 5px;
             border-radius: 12px; 
             text-align: center; 
             color: white; 
+            font-size: 30px; 
         }
 
         .square:nth-child(odd) {
-            background-color: blue;
+            background-color: blue; 
         }
 
         .square:nth-child(even) {
             background-color: gray;
         }
+
 
         @media screen and (max-width: 600px) {
             .container {
@@ -95,11 +102,11 @@
             }
 
             .blue-panel {
-                display: none;
+                display: block;
             }
 
             .square-panel {
-                display: flex;
+                display: none;
             }
 
             .square {
@@ -132,9 +139,6 @@
     </nav>
   </header>
   <main>
-    <div class="container">
-      
-    </div>
   </main>
     <article class="blue-panel">
       <h2>Улюблений фільм</h2>
